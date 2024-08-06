@@ -9,32 +9,48 @@
 </head>
 
 <body>
-    <form class="form">
+    <form class="form" id="registroForm">
         <p class="title">Formulario de registro </p>
         <p class="message">Regístrate en nuestra app.</p>
 
         <label>
-            <input required="" placeholder="" type="text" class="input">
-            <span>Nombre</span>
+            <input required type="text" class="input" id="nombre" placeholder="Nombre">
+            <!-- <span>Nombre</span> -->
+            <div class="error" id="nombreError"></div>
         </label>
 
 
         <label>
-            <input required="" placeholder="" type="email" class="input">
-            <span>Email</span>
+            <input required  type="date" class="input" id="fecha" placeholder="fecha">
+            <!-- <span>Email</span> -->
+            <div class="error" id="fechaError"></div>
+        </label>
+        <label>
+            <input required  type="tel" class="input" id="tele" placeholder="Telefono">
+            <!-- <span>Email</span> -->
+            <div class="error" id="telError"></div>
+        </label>
+        <label>
+            <input required  type="email" class="input" id="email" placeholder="Email">
+            <!-- <span>Email</span> -->
+            <div class="error" id="emailError"></div>
         </label>
 
         <label>
-            <input required="" placeholder="" type="password" class="input">
-            <span>Contraseña</span>
+            <input required type="password" class="input" id="pass" placeholder="Contraseña">
+            <!-- <span>Contraseña</span> -->
+            <div class="error" id="passError"></div>
         </label>
         <label>
-            <input required="" placeholder="" type="password" class="input">
-            <span>Repite la contraseña</span>
+            <input required type="password" class="input" id="pass2" placeholder="Repite contraseña">
+            <!-- <span>Repite la contraseña</span> -->
+            <div class="error" id="passwordError2"></div>
         </label>
         <button class="submit">Enviar</button>
         <p class="signin">¿Ya tienes una cuenta? <a href="#">Entra</a> </p>
     </form>
+
+    <script src="JS/formulario.js"></script>
 </body>
 
 </html>
